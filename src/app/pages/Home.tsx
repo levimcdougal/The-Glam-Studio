@@ -15,7 +15,7 @@ export function Home() {
         <div className="container mx-auto px-4 py-12 md:py-32">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
             {/* Left Content */}
-            <div className="space-y-6 text-center lg:text-left">
+            <div className="space-y-6 text-center lg:text-left order-2 lg:order-1">
               <p className="text-[#6B4E3D] max-w-md leading-relaxed mx-auto lg:mx-0">
                 Luxury isn't just how it looks it's how it feels, how it heals,
                 and how it brings out your most radiant self.
@@ -42,7 +42,7 @@ export function Home() {
             </div>
 
             {/* Right Content - Images */}
-            <div className="relative">
+            <div className="relative order-1 lg:order-2">
               <div className="relative">
                 <img
                   src={heroImage}
