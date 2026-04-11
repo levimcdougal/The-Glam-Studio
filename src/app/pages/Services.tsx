@@ -284,10 +284,10 @@ export function Services() {
           {/* Waxing */}
           <div className="flex flex-col lg:flex-row gap-6 items-stretch">
             <div
-              className="lg:w-[500px] flex-shrink-0 rounded-2xl shadow-md bg-cover bg-center h-56 lg:h-auto"
+              className="lg:w-[500px] flex-shrink-0 rounded-2xl shadow-md bg-cover bg-center h-56 lg:h-auto order-2 lg:order-1"
               style={{ backgroundImage: `url(${waxingImage})` }}
             />
-            <div className="flex-1 flex flex-col">
+            <div className="flex-1 flex flex-col order-1 lg:order-2">
               <SectionCard title="Waxing" icon={Droplet}>
                 {waxingServices.map((s) => (
                   <ServiceRow key={s.name} name={s.name} price={s.price} description={s.description} />
@@ -324,10 +324,10 @@ export function Services() {
           {/* Japanese Head Spa + Combo Packages */}
           <div className="flex flex-col lg:flex-row gap-6 items-stretch">
             <div
-              className="lg:w-[500px] flex-shrink-0 rounded-2xl shadow-md bg-cover bg-center h-56 lg:h-auto"
+              className="lg:w-[500px] flex-shrink-0 rounded-2xl shadow-md bg-cover bg-center h-56 lg:h-auto order-2 lg:order-1"
               style={{ backgroundImage: `url(${spaImage})` }}
             />
-            <div className="flex-1 flex flex-col gap-6">
+            <div className="flex-1 flex flex-col gap-6 order-1 lg:order-2">
               <SectionCard title="Japanese Head Spa" icon={Waves}>
                 {headSpaServices.map((s) => (
                   <ServiceRow key={s.name} name={s.name} price={s.price} description={s.description} duration={s.duration} />
