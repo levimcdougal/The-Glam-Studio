@@ -59,7 +59,7 @@ export function Home() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-[#6B4E3D] mb-4">
-              Why Choose <span className="text-[#B8860B]">The Glam Studio</span>?
+              Why Choose <span className="text-[#B8860B]">Glam Hair & Skin</span>?
             </h2>
             <p className="text-[#8B6F47] max-w-2xl mx-auto">
               Experience luxury beauty services tailored just for you
@@ -186,7 +186,7 @@ export function Home() {
             {/* Left Image — hidden on mobile */}
             <img
               src={ownerImage2}
-              alt="Owner of The Glam Studio"
+              alt="Owner of Glam Hair & Skin"
               className="hidden lg:block rounded-3xl shadow-xl w-full object-cover aspect-[3/4]"
             />
 

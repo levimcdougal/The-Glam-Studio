@@ -21,7 +21,7 @@ export function Appointment() {
             Book Your Appointment
           </h1>
           <p className="text-lg md:text-xl text-[#F5E6D3] max-w-2xl mx-auto">
-            Schedule your visit to The Glam Studio and let us pamper you with
+            Schedule your visit to Glam Hair & Skin and let us pamper you with
             our exceptional services.
           </p>
         </div>
@@ -40,7 +40,7 @@ export function Appointment() {
               width="100%"
               height="600"
               frameBorder="0"
-              title="Book an Appointment at The Glam Studio"
+              title="Book an Appointment at Glam Hair & Skin"
               className="w-full min-h-[500px] md:min-h-[700px]"
             />
           </div>
@@ -74,13 +74,13 @@ export function Appointment() {
                   Speak directly with our team
                 </p>
                 <a
-                  href="tel:2624115001"
+                  href="tel:6616663649"
                   className="text-2xl font-semibold text-[#B8860B] hover:text-[#A67C52] transition-colors block mb-4"
                 >
-                  (262) 411-5001
+                  661-666-3649
                 </a>
                 <a
-                  href="tel:2624115001"
+                  href="tel:6616663649"
                   className="inline-block bg-[#F5E6D3] text-[#6B4E3D] px-8 py-3 rounded-full hover:bg-[#EBD9C5] transition-colors font-semibold"
                 >
                   Call Now
@@ -97,13 +97,13 @@ export function Appointment() {
                   Send us a quick message
                 </p>
                 <a
-                  href="sms:2624115001"
+                  href="sms:6616663649"
                   className="text-2xl font-semibold text-[#B8860B] hover:text-[#A67C52] transition-colors block mb-4"
                 >
-                  (262) 411-5001
+                  661-666-3649
                 </a>
                 <a
-                  href="sms:2624115001"
+                  href="sms:6616663649"
                   className="inline-block bg-[#F5E6D3] text-[#6B4E3D] px-8 py-3 rounded-full hover:bg-[#EBD9C5] transition-colors font-semibold"
                 >
                   Send Text
@@ -223,7 +223,7 @@ export function Appointment() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="tel:2624115001"
+              href="tel:6616663649"
               className="inline-flex items-center gap-2 bg-[#B8860B] text-white px-8 py-4 rounded-full hover:bg-[#A67C52] transition-colors font-semibold text-lg shadow-lg"
             >
               <Phone className="w-5 h-5" />

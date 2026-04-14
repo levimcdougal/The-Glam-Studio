@@ -8,7 +8,7 @@ export function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-2xl font-bold mb-4">
-              <span className="text-[#B8860B]">The Glam</span> Studio
+              <span className="text-[#B8860B]">Glam</span> Hair & Skin
             </h3>
             <p className="text-[#F5E6D3]">
               Your destination for beauty, elegance, and self-care.
@@ -23,7 +23,7 @@ export function Footer() {
             <div className="space-y-3 text-[#F5E6D3]">
               <div className="flex items-center gap-2 justify-center">
                 <Phone size={18} className="text-[#B8860B]" />
-                <span>(262) 411-5001</span>
+                <span>661-666-3649</span>
               </div>
               <div className="flex items-center gap-2 justify-center">
                 <Mail size={18} className="text-[#B8860B]" />
@@ -39,7 +39,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-[#8B6F47] mt-4 pt-4 text-center text-[#EBD9C5] text-xs">
-          <p>&copy; 2026 The Glam Studio. All rights reserved.</p>
+          <p>&copy; 2026 Glam Hair & Skin. All rights reserved.</p>
         </div>
       </div>
     </footer>
