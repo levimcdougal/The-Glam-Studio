@@ -5,6 +5,7 @@ import waxingImage from "../../assets/wax.png";
 import hairCareImage from "../../assets/dry.png";
 import facialImage from "../../assets/treatment.png";
 import ownerImage2 from "../../assets/pro2.jpg";
+import ownerPhoto from "../../assets/photo.png";
 
 export function Home() {
   return (
@@ -96,10 +97,10 @@ export function Home() {
                 <Clock className="text-[#B8860B]" size={32} />
               </div>
               <h3 className="text-xl font-semibold mb-2 text-[#6B4E3D]">
-                Flexible Hours
+                Easy Scheduling
               </h3>
               <p className="text-[#8B6F47]">
-                Open 7 days a week to accommodate your busy schedule
+                Appointment slots available to fit your schedule, book online anytime
               </p>
             </div>
           </div>
@@ -123,7 +124,7 @@ export function Home() {
               <img
                 src={hairCareImage}
                 alt="Hair Care"
-                className="w-full h-64 object-cover object-top"
+                className="w-full h-80 object-cover object-center"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-[#6B4E3D]">
@@ -139,7 +140,7 @@ export function Home() {
               <img
                 src={facialImage}
                 alt="Facial Treatments"
-                className="w-full h-64 object-cover"
+                className="w-full h-80 object-cover object-center"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-[#6B4E3D]">
@@ -155,7 +156,7 @@ export function Home() {
               <img
                 src={waxingImage}
                 alt="Waxing Services"
-                className="w-full h-64 object-cover"
+                className="w-full h-80 object-cover object-center"
               />
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2 text-[#6B4E3D]">
@@ -182,7 +183,7 @@ export function Home() {
       {/* About Me Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-8 lg:gap-20 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] gap-8 lg:gap-12 items-center">
             {/* Left Image — hidden on mobile */}
             <img
               src={ownerImage2}
@@ -196,7 +197,7 @@ export function Home() {
                 Meet the <span className="text-[#B8860B]">Owner</span>
               </h2>
               <h3 className="text-xl md:text-2xl font-semibold text-[#6B4E3D]">
-                Satnam Kaur
+                Sunny Kaur
               </h3>
               <p className="text-[#B8860B] font-medium">
                 Licensed Cosmetologist &amp; Esthetician — Valencia
@@ -216,6 +217,12 @@ export function Home() {
               </div>
             </div>
 
+            {/* Right Image — visible on mobile, shown on all sizes */}
+            <img
+              src={ownerPhoto}
+              alt="Sunny Kaur"
+              className="rounded-3xl shadow-xl w-full object-cover aspect-[3/4] max-h-80 lg:max-h-none"
+            />
           </div>
         </div>
       </section>
