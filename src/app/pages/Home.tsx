@@ -4,7 +4,6 @@ import heroImage from "../../assets/3b23d07670f3706cb900d404f3a190083d17927c.png
 import waxingImage from "../../assets/wax.png";
 import hairCareImage from "../../assets/dry.png";
 import facialImage from "../../assets/treatment.png";
-import ownerImage1 from "../../assets/pro1.jpg";
 import ownerImage2 from "../../assets/pro2.jpg";
 
 export function Home() {
@@ -183,15 +182,15 @@ export function Home() {
       {/* About Me Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] gap-8 lg:gap-20 items-center">
-            {/* Left Image */}
+          <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr] gap-8 lg:gap-20 items-center">
+            {/* Left Image — hidden on mobile */}
             <img
-              src={ownerImage1}
+              src={ownerImage2}
               alt="Owner of The Glam Studio"
-              className="rounded-3xl shadow-xl w-full object-cover object-top aspect-[3/4]"
+              className="hidden lg:block rounded-3xl shadow-xl w-full object-cover aspect-[3/4]"
             />
 
-            {/* Center — Text Content */}
+            {/* Text Content */}
             <div className="space-y-6 text-center">
               <h2 className="text-3xl md:text-4xl font-bold text-[#6B4E3D]">
                 Meet the <span className="text-[#B8860B]">Owner</span>
@@ -217,12 +216,6 @@ export function Home() {
               </div>
             </div>
 
-            {/* Right Image — hidden on mobile */}
-            <img
-              src={ownerImage2}
-              alt="Owner of The Glam Studio"
-              className="hidden lg:block rounded-3xl shadow-xl w-full object-cover aspect-[3/4]"
-            />
           </div>
         </div>
       </section>

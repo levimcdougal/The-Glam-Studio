@@ -74,13 +74,13 @@ export function Appointment() {
                   Speak directly with our team
                 </p>
                 <a
-                  href="tel:5551234567"
+                  href="tel:2624115001"
                   className="text-2xl font-semibold text-[#B8860B] hover:text-[#A67C52] transition-colors block mb-4"
                 >
                   (555) 123-4567
                 </a>
                 <a
-                  href="tel:5551234567"
+                  href="tel:2624115001"
                   className="inline-block bg-[#F5E6D3] text-[#6B4E3D] px-8 py-3 rounded-full hover:bg-[#EBD9C5] transition-colors font-semibold"
                 >
                   Call Now
@@ -97,13 +97,13 @@ export function Appointment() {
                   Send us a quick message
                 </p>
                 <a
-                  href="sms:5551234567"
+                  href="sms:2624115001"
                   className="text-2xl font-semibold text-[#B8860B] hover:text-[#A67C52] transition-colors block mb-4"
                 >
                   (555) 123-4567
                 </a>
                 <a
-                  href="sms:5551234567"
+                  href="sms:2624115001"
                   className="inline-block bg-[#F5E6D3] text-[#6B4E3D] px-8 py-3 rounded-full hover:bg-[#EBD9C5] transition-colors font-semibold"
                 >
                   Send Text
@@ -120,13 +120,13 @@ export function Appointment() {
                   Send us a detailed inquiry
                 </p>
                 <a
-                  href="mailto:hello@glamstudio.com"
+                  href="mailto:Satnam2016@gmail.com"
                   className="text-xl font-semibold text-[#B8860B] hover:text-[#A67C52] transition-colors block mb-4"
                 >
-                  hello@glamstudio.com
+                  Satnam2016@gmail.com
                 </a>
                 <a
-                  href="mailto:hello@glamstudio.com"
+                  href="mailto:Satnam2016@gmail.com"
                   className="inline-block bg-[#F5E6D3] text-[#6B4E3D] px-8 py-3 rounded-full hover:bg-[#EBD9C5] transition-colors font-semibold"
                 >
                   Send Email
@@ -147,9 +147,9 @@ export function Appointment() {
                         Our Location
                       </h4>
                       <p className="text-white/90 text-lg leading-relaxed">
-                        123 Beauty Lane
+                        24251 Town Center Dr Suite 110
                         <br />
-                        Glamville, GL 12345
+                        Valencia, CA 91355
                       </p>
                     </div>
 
@@ -223,14 +223,14 @@ export function Appointment() {
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="tel:5551234567"
+              href="tel:2624115001"
               className="inline-flex items-center gap-2 bg-[#B8860B] text-white px-8 py-4 rounded-full hover:bg-[#A67C52] transition-colors font-semibold text-lg shadow-lg"
             >
               <Phone className="w-5 h-5" />
               Call Us Now
             </a>
             <a
-              href="mailto:hello@glamstudio.com"
+              href="mailto:Satnam2016@gmail.com"
               className="inline-flex items-center gap-2 bg-[#6B4E3D] text-white px-8 py-4 rounded-full hover:bg-[#8B6F47] transition-colors font-semibold text-lg shadow-lg"
             >
               <Mail className="w-5 h-5" />

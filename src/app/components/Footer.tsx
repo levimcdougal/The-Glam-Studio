@@ -1,4 +1,4 @@
-import { Instagram, Facebook, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 export function Footer() {
   return (
@@ -23,41 +23,19 @@ export function Footer() {
             <div className="space-y-3 text-[#F5E6D3]">
               <div className="flex items-center gap-2 justify-center">
                 <Phone size={18} className="text-[#B8860B]" />
-                <span>(555) 123-4567</span>
+                <span>(262) 411-5001</span>
               </div>
               <div className="flex items-center gap-2 justify-center">
                 <Mail size={18} className="text-[#B8860B]" />
-                <span>hello@glamstudio.com</span>
+                <span>Satnam2016@gmail.com</span>
               </div>
               <div className="flex items-center gap-2 justify-center">
                 <MapPin size={18} className="text-[#B8860B]" />
-                <span>123 Beauty Lane, Glamville</span>
+                <span>24251 Town Center Dr Suite 110, Valencia, CA 91355</span>
               </div>
             </div>
           </div>
 
-          {/* Social */}
-          <div>
-            <h4 className="text-lg font-semibold mb-4 text-[#B8860B]">
-              Follow Us
-            </h4>
-            <div className="flex gap-4 justify-center">
-              <a
-                href="#"
-                className="bg-[#B8860B] p-3 rounded-full hover:bg-[#A67C52] transition-colors"
-                aria-label="Instagram"
-              >
-                <Instagram size={20} />
-              </a>
-              <a
-                href="#"
-                className="bg-[#B8860B] p-3 rounded-full hover:bg-[#A67C52] transition-colors"
-                aria-label="Facebook"
-              >
-                <Facebook size={20} />
-              </a>
-            </div>
-          </div>
         </div>
 
         <div className="border-t border-[#8B6F47] mt-4 pt-4 text-center text-[#EBD9C5] text-xs">
