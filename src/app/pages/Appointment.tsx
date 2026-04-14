@@ -77,7 +77,7 @@ export function Appointment() {
                   href="tel:2624115001"
                   className="text-2xl font-semibold text-[#B8860B] hover:text-[#A67C52] transition-colors block mb-4"
                 >
-                  (555) 123-4567
+                  (262) 411-5001
                 </a>
                 <a
                   href="tel:2624115001"
@@ -100,7 +100,7 @@ export function Appointment() {
                   href="sms:2624115001"
                   className="text-2xl font-semibold text-[#B8860B] hover:text-[#A67C52] transition-colors block mb-4"
                 >
-                  (555) 123-4567
+                  (262) 411-5001
                 </a>
                 <a
                   href="sms:2624115001"
