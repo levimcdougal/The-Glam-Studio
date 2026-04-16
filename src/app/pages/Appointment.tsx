@@ -136,9 +136,9 @@ export function Appointment() {
 
             {/* Business Info Card */}
             <div className="bg-gradient-to-br from-[#B8860B] to-[#A67C52] rounded-3xl shadow-2xl overflow-hidden">
-              <div className="grid grid-cols-1 lg:grid-cols-2">
+              <div className="grid grid-cols-1 lg:grid-cols-[3fr_2fr]">
                 {/* Location & Hours */}
-                <div className="p-10">
+                <div className="p-10 min-w-0">
                   <h3 className="text-3xl font-bold mb-8 text-white">Visit Information</h3>
                   
                   <div className="space-y-8">
@@ -157,13 +157,11 @@ export function Appointment() {
                       <h4 className="text-xl font-semibold mb-3 text-[#F5E6D3]">
                         Business Hours
                       </h4>
-                      <p className="text-white/90 text-lg leading-relaxed">
-                        Monday - Friday: 9:00 AM - 7:00 PM
-                        <br />
-                        Saturday: 10:00 AM - 6:00 PM
-                        <br />
-                        Sunday: 11:00 AM - 5:00 PM
-                      </p>
+                      <div className="text-white/90 text-lg leading-relaxed space-y-1">
+                        <p>Monday - Friday: 9:30 AM - 3:30 PM, after by appointment</p>
+                        <p>Saturday: By appointment only</p>
+                        <p>Sunday: Closed</p>
+                      </div>
                     </div>
                   </div>
                 </div>
