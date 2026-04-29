@@ -1,11 +1,13 @@
 import { Link } from "react-router";
-import { Sparkles, Clock, Users } from "lucide-react";
+import { Sparkles, Clock, Users, Star } from "lucide-react";
 import heroImage from "../../assets/3b23d07670f3706cb900d404f3a190083d17927c.png";
 import waxingImage from "../../assets/wax.png";
 import hairCareImage from "../../assets/dry.png";
 import facialImage from "../../assets/treatment.png";
 import ownerImage2 from "../../assets/pro2.jpg";
 import ownerPhoto from "../../assets/photo.png";
+import salon1 from "../../assets/57889.jpg";
+import salon2 from "../../assets/57888.jpg";
 
 export function Home() {
   return (
@@ -180,6 +182,26 @@ export function Home() {
         </div>
       </section>
 
+      {/* Salon Photos */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-[#6B4E3D] mb-4">
+              Visit Our <span className="text-[#B8860B]">Salon</span>
+            </h2>
+            <p className="text-[#8B6F47] max-w-2xl mx-auto">
+              A clean, relaxing space designed to make you feel at home
+            </p>
+          </div>
+          <div className="flex flex-col md:flex-row justify-center items-start gap-16">
+            <img src={salon1} alt="The Glam Studio salon" className="rounded-2xl shadow-lg w-full md:w-auto md:max-h-[500px]" />
+            <img src={salon2} alt="The Glam Studio salon" className="rounded-2xl shadow-lg w-full md:w-auto md:max-h-[500px]" />
+          </div>
+        </div>
+      </section>
+
+      <div className="border-t border-[#B8860B] w-full" />
+
       {/* About Me Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
@@ -223,6 +245,57 @@ export function Home() {
               alt="Sunny Kaur"
               className="rounded-3xl shadow-xl w-full object-cover aspect-[3/4] max-h-80 lg:max-h-none"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* Reviews Section */}
+      <section className="py-20 bg-gradient-to-br from-[#F5E6D3] to-[#FAF0E6]">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl font-bold text-[#6B4E3D] mb-4">
+              What Our <span className="text-[#B8860B]">Clients Say</span>
+            </h2>
+            <div className="flex justify-center gap-1 mb-2">
+              {[...Array(5)].map((_, i) => (
+                <Star key={i} className="w-5 h-5 fill-[#B8860B] text-[#B8860B]" />
+              ))}
+            </div>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-[3fr_5fr] gap-8 items-stretch">
+            {/* Swara Bose */}
+            <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col gap-4 h-full">
+              <div>
+                <p className="font-semibold text-[#6B4E3D] mb-1">Swara Bose</p>
+                <div className="flex gap-1">
+                  {[...Array(5)].map((_, j) => <Star key={j} className="w-4 h-4 fill-[#B8860B] text-[#B8860B]" />)}
+                </div>
+              </div>
+              <p className="text-[#8B6F47] leading-relaxed">"I recently had a Dermalogica facial with Satnam, and it was truly excellent. She performed a thorough and incredibly relaxing facial massage. She removed stubborn blackheads also. Afterward, my skin was noticeably glowing and felt completely refreshed. Adding the whole-body massage as a complementary treatment was a win-win. I really appreciated the extra time and attention she spent on my feet and hands, as I was feeling very tired—it made a huge difference. This is my second wonderful experience with her, as I previously had a HydraFacial with Satnam which was also fantastic. She has a wonderful technique and a real talent for making the entire session therapeutic and luxurious."</p>
+            </div>
+
+            {/* Dimple + Alejandra stacked */}
+            <div className="flex flex-col gap-8">
+              <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col gap-4">
+                <div>
+                  <p className="font-semibold text-[#6B4E3D] mb-1">Dimple Naresh</p>
+                  <div className="flex gap-1">
+                    {[...Array(5)].map((_, j) => <Star key={j} className="w-4 h-4 fill-[#B8860B] text-[#B8860B]" />)}
+                  </div>
+                </div>
+                <p className="text-[#8B6F47] leading-relaxed">"Thank you so much for the amazing facial and massage! I received papaya facial. My face feels good. It was a pleasure meeting you and I truly enjoyed the experience."</p>
+              </div>
+              <div className="bg-white rounded-2xl shadow-md p-6 flex flex-col gap-4">
+                <div>
+                  <p className="font-semibold text-[#6B4E3D] mb-1">Alejandra Rocha</p>
+                  <div className="flex gap-1">
+                    {[...Array(5)].map((_, j) => <Star key={j} className="w-4 h-4 fill-[#B8860B] text-[#B8860B]" />)}
+                  </div>
+                </div>
+                <p className="text-[#8B6F47] leading-relaxed">"I had such a relaxing and refreshing facial with Satnam — my skin felt hydrated, brighter, and incredibly smooth afterwards. She was professional, gentle, and really took the time to customize everything to what my skin needed. The whole experience felt calm, clean, and super welcoming, and you can tell she truly cares about her clients and their results. If you're looking for someone who pays attention to detail and creates a genuinely soothing experience, I definitely recommend booking with her!"</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
