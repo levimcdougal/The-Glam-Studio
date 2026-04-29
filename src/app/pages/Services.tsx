@@ -122,6 +122,13 @@ const comboPackages = [
   { name: "Head Spa + Facial + Blow Dry", price: "$185", description: "The ultimate self-care experience — scalp, skin, and style all in one" },
 ];
 
+const MOTHERS_DAY_SALE = true;
+
+function salePrice(price: string): string {
+  const num = parseFloat(price.replace("$", ""));
+  return "$" + (num * 0.9).toFixed(2).replace(/\.00$/, "");
+}
+
 function ServiceRow({
   name,
   price,
@@ -148,9 +155,16 @@ function ServiceRow({
           <p className="text-sm text-[#8B6F47] mt-0.5">{description}</p>
         )}
       </div>
-      <p className="font-bold text-[#B8860B] text-lg whitespace-nowrap">
-        {price ?? "Ask for pricing"}
-      </p>
+      {price == null ? (
+        <p className="font-bold text-[#B8860B] text-lg whitespace-nowrap">Ask for pricing</p>
+      ) : MOTHERS_DAY_SALE ? (
+        <div className="text-right whitespace-nowrap">
+          <p className="text-sm text-gray-400 line-through">{price}</p>
+          <p className="font-bold text-[#B8860B] text-lg">{salePrice(price)}</p>
+        </div>
+      ) : (
+        <p className="font-bold text-[#B8860B] text-lg whitespace-nowrap">{price}</p>
+      )}
     </div>
   );
 }
@@ -189,6 +203,18 @@ export function Services() {
           </p>
         </div>
       </section>
+
+      {/* Mother's Day Special */}
+      {MOTHERS_DAY_SALE && (
+        <section className="py-4 bg-[#B8860B]">
+          <div className="container mx-auto px-4 text-center">
+            <p className="text-white font-semibold text-base md:text-lg">
+              🌸 <span className="font-bold">Mother's Day Special</span> — Enjoy{" "}
+              <span className="underline">10% off all services</span>! Limited time only.
+            </p>
+          </div>
+        </section>
+      )}
 
       {/* First-Time Customer Discount */}
       <section className="py-5 bg-[#F5E6D3] border-b border-[#E8D5C0]">

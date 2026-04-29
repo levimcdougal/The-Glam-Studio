@@ -27,7 +27,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2 justify-center">
                 <Mail size={18} className="text-[#B8860B]" />
-                <span>Satnam2016@gmail.com</span>
+                <span>glamhairskin8@gmail.com</span>
               </div>
               <div className="flex items-center gap-2 justify-center">
                 <MapPin size={18} className="text-[#B8860B]" />

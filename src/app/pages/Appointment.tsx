@@ -120,13 +120,13 @@ export function Appointment() {
                   Send us a detailed inquiry
                 </p>
                 <a
-                  href="mailto:Satnam2016@gmail.com"
+                  href="mailto:glamhairskin8@gmail.com"
                   className="text-xl font-semibold text-[#B8860B] hover:text-[#A67C52] transition-colors block mb-4"
                 >
-                  Satnam2016@gmail.com
+                  glamhairskin8@gmail.com
                 </a>
                 <a
-                  href="mailto:Satnam2016@gmail.com"
+                  href="mailto:glamhairskin8@gmail.com"
                   className="inline-block bg-[#F5E6D3] text-[#6B4E3D] px-8 py-3 rounded-full hover:bg-[#EBD9C5] transition-colors font-semibold"
                 >
                   Send Email
@@ -228,7 +228,7 @@ export function Appointment() {
               Call Us Now
             </a>
             <a
-              href="mailto:Satnam2016@gmail.com"
+              href="mailto:glamhairskin8@gmail.com"
               className="inline-flex items-center gap-2 bg-[#6B4E3D] text-white px-8 py-4 rounded-full hover:bg-[#8B6F47] transition-colors font-semibold text-lg shadow-lg"
             >
               <Mail className="w-5 h-5" />
