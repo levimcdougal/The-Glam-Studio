@@ -52,7 +52,7 @@ const waxingServices = [
   },
   {
     name: "Full Body",
-    price: "$180",
+    price: "$150",
     description: "Full arms + full legs + underarms — the complete package",
   },
 ];
@@ -65,7 +65,7 @@ const waxingAddOns = [
 const hairServices = [
   {
     name: "Blow Dry",
-    price: null,
+    price: "$35",
     description: "Wash + blowout for a sleek, polished finish",
   },
   {

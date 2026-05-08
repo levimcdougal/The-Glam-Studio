@@ -6,8 +6,13 @@ import hairCareImage from "../../assets/dry.png";
 import facialImage from "../../assets/treatment.png";
 import ownerImage2 from "../../assets/pro2.jpg";
 import ownerPhoto from "../../assets/photo.png";
+import pic from "../../assets/pic.jpg";
+import pic2 from "../../assets/pic2.jpg";
 import salon1 from "../../assets/57889.jpg";
 import salon2 from "../../assets/57888.jpg";
+import place1 from "../../assets/Place1.jpg";
+import place2 from "../../assets/Place2.jpg";
+import place3 from "../../assets/Place3.jpg";
 
 export function Home() {
   return (
@@ -193,9 +198,12 @@ export function Home() {
               A clean, relaxing space designed to make you feel at home
             </p>
           </div>
-          <div className="flex flex-col md:flex-row justify-center items-start gap-16">
-            <img src={salon1} alt="The Glam Studio salon" className="rounded-2xl shadow-lg w-full md:w-auto md:max-h-[500px]" />
-            <img src={salon2} alt="The Glam Studio salon" className="rounded-2xl shadow-lg w-full md:w-auto md:max-h-[500px]" />
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+            <img src={salon1} alt="The Glam Studio salon" className="rounded-2xl shadow-lg w-full h-64 object-cover" />
+            <img src={salon2} alt="The Glam Studio salon" className="rounded-2xl shadow-lg w-full h-64 object-cover" />
+            <img src={place1} alt="The Glam Studio salon" className="rounded-2xl shadow-lg w-full h-64 object-cover" />
+            <img src={place2} alt="The Glam Studio salon" className="rounded-2xl shadow-lg w-full h-64 object-cover" />
+            <img src={place3} alt="The Glam Studio salon" className="rounded-2xl shadow-lg w-full h-64 object-cover" />
           </div>
         </div>
       </section>
@@ -205,46 +213,39 @@ export function Home() {
       {/* About Me Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-[1fr_2fr_1fr] gap-8 lg:gap-12 items-center">
-            {/* Left Image — hidden on mobile */}
-            <img
-              src={ownerImage2}
-              alt="Owner of Glam Hair & Skin"
-              className="hidden lg:block rounded-3xl shadow-xl w-full object-cover aspect-[3/4]"
-            />
-
-            {/* Text Content */}
-            <div className="space-y-6 text-center">
-              <h2 className="text-3xl md:text-4xl font-bold text-[#6B4E3D]">
-                Meet the <span className="text-[#B8860B]">Owner</span>
-              </h2>
-              <h3 className="text-xl md:text-2xl font-semibold text-[#6B4E3D]">
-                Sunny Kaur
-              </h3>
-              <p className="text-[#B8860B] font-medium">
-                Licensed Cosmetologist &amp; Esthetician — Valencia
-              </p>
-              <p className="text-[#8B6F47] leading-relaxed text-base md:text-lg">
-                I specialize in results-driven treatments that focus on what your skin and hair truly need to repair, strengthen, and maintain long-term health. My approach goes beyond trends and focuses on real results, confidence, and care.
-              </p>
-              <p className="text-[#8B6F47] leading-relaxed">
-                As a certified professional, I combine modern techniques with personalized treatments to deliver visible, lasting results for every client. At Glam Hair &amp; Skin, my mission is simple — beauty should not be a luxury. It should be accessible, effective, and built to last.
-              </p>
-              <p className="text-[#8B6F47] leading-relaxed">
-                Offering Glow Facials, Acne Treatments, Deep Cleansing, Skin Renewal, Full Body Waxing, Hair Services, and Japanese Head Spa treatments — all designed to help you achieve healthy, radiant skin and hair.
-              </p>
-              <div className="flex flex-col items-center gap-2 pt-2 text-[#6B4E3D] font-medium">
-                <span>🎓 Certified from Newberry School of Beauty</span>
-                <span>✔ Professional &amp; Licensed Services</span>
-              </div>
+          {/* Text Content */}
+          <div className="space-y-6 text-center max-w-2xl mx-auto mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold text-[#6B4E3D]">
+              Meet the <span className="text-[#B8860B]">Owner</span>
+            </h2>
+            <h3 className="text-xl md:text-2xl font-semibold text-[#6B4E3D]">
+              Sunny Kaur
+            </h3>
+            <p className="text-[#B8860B] font-medium">
+              Licensed Cosmetologist &amp; Esthetician — Valencia
+            </p>
+            <p className="text-[#8B6F47] leading-relaxed text-base md:text-lg">
+              I specialize in results-driven treatments that focus on what your skin and hair truly need to repair, strengthen, and maintain long-term health. My approach goes beyond trends and focuses on real results, confidence, and care.
+            </p>
+            <p className="text-[#8B6F47] leading-relaxed">
+              As a certified professional, I combine modern techniques with personalized treatments to deliver visible, lasting results for every client. At Glam Hair &amp; Skin, my mission is simple — beauty should not be a luxury. It should be accessible, effective, and built to last.
+            </p>
+            <p className="text-[#8B6F47] leading-relaxed">
+              Offering Glow Facials, Acne Treatments, Deep Cleansing, Skin Renewal, Full Body Waxing, Hair Services, and Japanese Head Spa treatments — all designed to help you achieve healthy, radiant skin and hair.
+            </p>
+            <div className="flex flex-col items-center gap-2 pt-2 text-[#6B4E3D] font-medium">
+              <span>🎓 Certified from Newberry School of Beauty</span>
+              <span>✔ Professional &amp; Licensed Services</span>
             </div>
+          </div>
 
-            {/* Right Image — visible on mobile, shown on all sizes */}
-            <img
-              src={ownerPhoto}
-              alt="Sunny Kaur"
-              className="rounded-3xl shadow-xl w-full object-cover aspect-[3/4] max-h-80 lg:max-h-none"
-            />
+          {/* Photos & Video */}
+          <div className="flex flex-col md:flex-row justify-center items-center gap-6">
+            <img src={ownerImage2} alt="Owner of Glam Hair & Skin" className="rounded-2xl shadow-xl w-72 h-96 object-cover flex-shrink-0" />
+            <img src={pic} alt="Glam Hair & Skin" className="rounded-2xl shadow-xl w-72 h-96 object-cover flex-shrink-0" />
+            <video src="/vid.mp4" controls className="rounded-2xl shadow-xl w-72 h-96 object-cover flex-shrink-0" />
+            <img src={pic2} alt="Glam Hair & Skin" className="rounded-2xl shadow-xl w-72 h-96 object-cover flex-shrink-0" />
+            <img src={ownerPhoto} alt="Sunny Kaur" className="rounded-2xl shadow-xl w-72 h-96 object-cover flex-shrink-0" />
           </div>
         </div>
       </section>
