@@ -41,6 +41,16 @@ const facialServices = [
 
 const waxingServices = [
   {
+    name: "Eyebrow",
+    price: "$15",
+    description: "Clean, defined eyebrow shaping",
+  },
+  {
+    name: "Chin",
+    price: "$10",
+    description: "Smooth chin wax for a clean finish",
+  },
+  {
     name: "Bikini Line",
     price: "$40",
     description: "Clean, defined bikini line wax for a smooth finish",
