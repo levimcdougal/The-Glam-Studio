@@ -1,16 +1,6 @@
 import { Mail, Phone, MessageSquare } from "lucide-react";
-import { useEffect } from "react";
 
 export function Appointment() {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://asset.cal.com/embed/embed.js";
-    script.async = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
 
   return (
     <div>
@@ -27,7 +17,7 @@ export function Appointment() {
         </div>
       </section>
 
-      {/* Cal.com Booking Widget */}
+      {/* GlossGenius Booking */}
       <section className="py-16 bg-gradient-to-br from-[#F5E6D3] via-[#FAF0E6] to-white">
         <div className="container mx-auto px-4 max-w-5xl">
           <div className="text-center mb-10">
@@ -36,12 +26,12 @@ export function Appointment() {
           </div>
           <div className="bg-white rounded-3xl shadow-xl overflow-hidden border border-[#F0E0CC]">
             <iframe
-              src="https://cal.com/theglamstudio"
+              src="https://glamhairskin.glossgenius.com/services"
               width="100%"
-              height="600"
-              frameBorder="0"
+              height="800"
               title="Book an Appointment at Glam Hair & Skin"
-              className="w-full min-h-[500px] md:min-h-[700px]"
+              style={{ border: "none" }}
+              className="w-full"
             />
           </div>
         </div>
