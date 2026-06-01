@@ -30,7 +30,7 @@ export function Appointment() {
               width="100%"
               height="800"
               title="Book an Appointment at Glam Hair & Skin"
-              style={{ border: "none" }}
+              style={{ border: "none", zoom: "0.75" }}
               className="w-full"
             />
           </div>
