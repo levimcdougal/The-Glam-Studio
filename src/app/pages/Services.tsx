@@ -9,32 +9,32 @@ import backImage from "../../assets/back.png";
 const facialServices = [
   {
     name: "Express Facial",
-    price: "$45",
+    price: "$60",
     description: "30 minute quick clean — fast refresh for glowing skin",
   },
   {
     name: "Classic Facial",
-    price: "$75",
+    price: "$90",
     description: "Deep cleansing, exfoliation, massage, mask & SPF",
   },
   {
     name: "Hydrating Facial",
-    price: "$85",
+    price: "$100",
     description: "For dry & dull skin — hyaluronic acid & moisture boost",
   },
   {
     name: "Acne / Deep Cleaning Facial",
-    price: "$90",
+    price: "$105",
     description: "Blackhead removal + acne treatment",
   },
   {
     name: "Anti-Aging Facial",
-    price: "$85",
+    price: "$100",
     description: "Targeted treatment to firm and rejuvenate the skin",
   },
   {
     name: "Signature Facial",
-    price: "$95",
+    price: "$110",
     description: "Our signature full-service facial experience",
   },
 ];
@@ -42,65 +42,65 @@ const facialServices = [
 const waxingServices = [
   {
     name: "Eyebrow",
-    price: "$15",
+    price: "$30",
     description: "Clean, defined eyebrow shaping",
   },
   {
     name: "Chin",
-    price: "$10",
+    price: "$25",
     description: "Smooth chin wax for a clean finish",
   },
   {
     name: "Bikini Line",
-    price: "$40",
+    price: "$55",
     description: "Clean, defined bikini line wax for a smooth finish",
   },
   {
     name: "Brazilian",
-    price: "$60",
+    price: "$75",
     description: "Full hair removal for a completely smooth result",
   },
   {
     name: "Full Body",
-    price: "$150",
+    price: "$165",
     description: "Full arms + full legs + underarms — the complete package",
   },
 ];
 
 const waxingAddOns = [
-  { name: "Add Brazilian", price: "$45", description: "Add a Brazilian to any service" },
-  { name: "Stomach", price: "$35", description: "Smooth stomach wax add-on" },
+  { name: "Add Brazilian", price: "$60", description: "Add a Brazilian to any service" },
+  { name: "Stomach", price: "$50", description: "Smooth stomach wax add-on" },
 ];
 
 const hairServices = [
   {
     name: "Blow Dry",
-    price: "$35",
+    price: "$50",
     description: "Wash + blowout for a sleek, polished finish",
   },
   {
     name: "Root Touch Up",
-    price: "$45",
+    price: "$60",
     description: "Refresh your color at the roots for a seamless, vibrant look",
   },
   {
     name: "Curling",
-    price: "$45",
+    price: "$60",
     description: "Defined, bouncy curls styled with a curling iron",
   },
   {
     name: "Flat Iron",
-    price: "$45",
+    price: "$60",
     description: "Silky, smooth straightening for a sleek look",
   },
   {
     name: "Blowdry + Curls",
-    price: "$55",
+    price: "$70",
     description: "Wash, blowout, and curling iron styling all in one",
   },
   {
     name: "Facial + Blowdry",
-    price: "$99",
+    price: "$114",
     description: "Treat your skin and your hair in one luxurious visit",
   },
 ];
@@ -108,28 +108,28 @@ const hairServices = [
 const headSpaServices = [
   {
     name: "Basic Head Spa",
-    price: "$65",
+    price: "$80",
     duration: "30 min",
     description: "Scalp cleanser + relaxing scalp massage to relieve tension and promote hair health",
   },
   {
     name: "Standard Head Spa",
-    price: "$85",
+    price: "$100",
     duration: "45 min",
     description: "Deep scalp cleaning, therapeutic massage, and hydration treatment",
   },
   {
     name: "Luxury Head Spa",
-    price: "$150",
+    price: "$165",
     duration: "60 min",
     description: "Full scalp treatment with steam, nourishing mask, and extended relaxation massage",
   },
 ];
 
 const comboPackages = [
-  { name: "Head Spa + Facial", price: "$150", description: "Rejuvenate your scalp and skin together for full-body relaxation" },
-  { name: "Head Spa + Blow Dry", price: "$125", description: "Scalp treatment followed by a fresh, polished blowout" },
-  { name: "Head Spa + Facial + Blow Dry", price: "$185", description: "The ultimate self-care experience — scalp, skin, and style all in one" },
+  { name: "Head Spa + Facial", price: "$165", description: "Rejuvenate your scalp and skin together for full-body relaxation" },
+  { name: "Head Spa + Blow Dry", price: "$140", description: "Scalp treatment followed by a fresh, polished blowout" },
+  { name: "Head Spa + Facial + Blow Dry", price: "$200", description: "The ultimate self-care experience — scalp, skin, and style all in one" },
 ];
 
 const MOTHERS_DAY_SALE = true;
@@ -257,8 +257,8 @@ export function Services() {
               <h3 className="text-lg font-bold text-white mb-1">Basic Head Spa</h3>
               <p className="text-[#F5E6D3] text-sm mb-4">Scalp cleanse & relaxing massage</p>
               <div className="flex items-center justify-center gap-3">
-                <span className="text-white/50 line-through text-lg">$65</span>
-                <span className="text-[#B8860B] text-3xl font-bold">$61.75</span>
+                <span className="text-white/50 line-through text-lg">$80</span>
+                <span className="text-[#B8860B] text-3xl font-bold">$76</span>
               </div>
             </div>
 
@@ -268,8 +268,8 @@ export function Services() {
               <h3 className="text-lg font-bold text-white mb-1">Premium Head Spa</h3>
               <p className="text-white/80 text-sm mb-4">Deep cleanse, massage & hydration</p>
               <div className="flex items-center justify-center gap-3">
-                <span className="text-white/50 line-through text-lg">$88</span>
-                <span className="text-white text-3xl font-bold">$83.60</span>
+                <span className="text-white/50 line-through text-lg">$103</span>
+                <span className="text-white text-3xl font-bold">$97.85</span>
               </div>
             </div>
 
@@ -278,8 +278,8 @@ export function Services() {
               <h3 className="text-lg font-bold text-white mb-1">Luxury & Facial Combo</h3>
               <p className="text-[#F5E6D3] text-sm mb-4">Full head spa + facial treatment</p>
               <div className="flex items-center justify-center gap-3">
-                <span className="text-white/50 line-through text-lg">$125</span>
-                <span className="text-[#B8860B] text-3xl font-bold">$118.75</span>
+                <span className="text-white/50 line-through text-lg">$140</span>
+                <span className="text-[#B8860B] text-3xl font-bold">$133</span>
               </div>
             </div>
           </div>
